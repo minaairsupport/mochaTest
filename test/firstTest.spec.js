@@ -15,7 +15,7 @@ describe("FirstTest", function() {
   });
   it("FirstTest", async function() {
     await driver.get("https://sbuyb.csb.app/");
-    await driver.setRect(1920, 1057)
+    await driver.manage().window().setRect(1920, 1057)
     {
       const element = await driver.findElement(
         By.css("#AdministrationNav > .MuiTab-wrapper")
